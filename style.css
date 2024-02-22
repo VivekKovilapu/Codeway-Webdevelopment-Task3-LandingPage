@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    background-color:black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.navigation > li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navigation > li > a {
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: goldenrod;
+}
+
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+li{
+    font-weight: bolder;
+}
+.main-content {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.cars > li {
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cars > li > img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+}
+
+.cars > li > .image-name {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #252525;
+}
+
+footer {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.contact-details {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #252525;
+}
+
+.contact-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #252525;
+  }
+  
+  body.dark-mode {
+    background-color: #252525;
+    color: black;
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-label {
+    margin-right: 10px;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #252525;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: black;
+  }
+  
+  input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
